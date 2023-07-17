@@ -1,0 +1,508 @@
+$blackColorLight: #333333;
+$darkOrange: #D84727;
+$whiteColor: #ffff;
+$lightOrange: #F1DDC9;
+$greyColor: #777777;
+$greyColor2: #999999;
+$primaryFont: 'Taviraj', serif;
+$secondary: 'Nunito', sans-serif;
+$h1: 3.75rem;
+$h2: 2.25rem;
+$h3: 1.5rem;
+$h4: 1.75rem;
+$p: 1rem;
+
+
+// Steps Start
+.ant-steps .ant-steps-item-active>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title {
+    color: $darkOrange !important;
+    font-weight: 500;
+    font-family: $primaryFont;
+}
+
+.ant-steps .ant-steps-item-title {
+    color: $greyColor2 !important;
+    font-weight: 500;
+    font-family: $primaryFont;
+}
+
+.ant-steps .ant-steps-item-content {
+    margin-top: 0 !important;
+    width: 122px !important;
+}
+
+.ant-steps-item-icon {
+    height: 48px !important;
+    width: 48px !important;
+}
+
+.ant-steps .ant-steps-item-tail {
+    position: absolute;
+    top: 60px;
+    inset-inline-start: 0;
+    width: 65%;
+    &::after{
+        background-color: $darkOrange !important;
+    }
+}
+
+.ant-steps.ant-steps-label-vertical .ant-steps-item-tail {
+    margin-inline-start: 102px;
+    padding: 4px 24px;
+}
+
+// Steps End
+// Billing Start
+.billing-div {
+    margin-top: 46px;
+
+    .billing-left {
+        background-color: $whiteColor;
+        padding: 32px;
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: $h2;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+    }
+
+    .billing-left-content {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                font-size: $h3;
+                font-weight: 500;
+            }
+        }
+
+        .grand-total {
+            p:nth-child(1) {
+                font-size: $h3;
+                font-weight: 500;
+            }
+
+            p:nth-child(2) {
+                font-size: $h2;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .billing-right {
+        background-color: $whiteColor;
+        padding: 32px;
+
+        h2 {
+            font-size: $h2;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+    }
+}
+
+.ant-input {
+    border: none;
+    border-bottom: 1px solid $blackColorLight;
+    border-radius: 0;
+    padding-left: 0;
+    font-size: 1.25rem;
+}
+
+.ant-input::placeholder {
+    color: $greyColor2;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.ant-form-item-label {
+    label {
+        color: #000 !important;
+        font-weight: 400;
+        font-size: 1rem !important;
+
+        &::before {
+            display: none !important;
+        }
+    }
+}
+
+.billing-form {
+    .ant-select-in-form-item {
+        .ant-select-selector {
+            border: none;
+            border-bottom: 1px solid $blackColorLight ;
+            border-radius: 0;
+            padding-left: 0;
+        }
+
+        span {
+            font-size: 1.25rem;
+
+            span {
+                color: #000;
+            }
+        }
+
+    }
+}
+
+
+.checkout-submit-btn {
+    background-color: transparent;
+    height: 66px;
+    width: 272px;
+    border: 1px solid $darkOrange;
+    color: $darkOrange;
+    font-weight: 400;
+    border-radius: 0;
+    font-size: 1.25rem;
+}
+
+.con-btn-checkout {
+    background-color: $darkOrange;
+    height: 66px;
+    width: 272px;
+    color: $whiteColor;
+    font-weight: 400;
+    border-radius: 0;
+    font-size: 1.25rem;
+}
+
+.btn-div {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// Billing End
+
+// Payment Method Start 
+.payment-left {
+    background-color: $whiteColor;
+    padding: 32px;
+    margin-bottom: 30px;
+    height: 200px;
+
+    h2 {
+        font-size: $h2;
+        margin-bottom: 40px;
+        font-weight: 600;
+    }
+}
+
+.payment-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    h2 {
+        margin-bottom: 0 !important;
+        font-weight: 600;
+    }
+
+    p {
+        color: $darkOrange;
+        font-size: $h3;
+    }
+}
+
+.billing-left-txt {
+    width: 476px;
+    line-height: 2;
+    font-family: $secondary;
+    color:$blackColorLight
+}
+
+.billing-right {
+    .order-detail-main {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .order-detail-info {
+        display: flex;
+        gap: 60px;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+
+            .copy-txt {
+                color: $darkOrange;
+                font-weight: 700;
+            }
+        }
+
+        .order-number-txt,
+        .order-titile {
+            font-weight: 400;
+            font-size: 1.25rem;
+        }
+
+        .order-number-txt {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            gap: 8px;
+
+            p {
+                font-weight: 400;
+                font-size: 1.25rem;
+            }
+        }
+
+        .order-txt-info {
+            font-weight: 400;
+            font-size: 1rem;
+            color: $greyColor;
+        }
+    }
+
+    .order-detail-item {
+        display: flex;
+        gap: 145px;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+
+            .copy-txt {
+                color: $darkOrange;
+                font-weight: 700;
+            }
+        }
+
+        .order-number-txt,
+        .order-titile {
+            font-weight: 400;
+            font-size: 1.25rem;
+        }
+
+        .order-number-txt {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            gap: 8px;
+
+            p {
+                font-weight: 400;
+                font-size: 1.25rem;
+            }
+        }
+
+        .order-txt-info {
+            font-weight: 400;
+            font-size: 1rem;
+            color: $greyColor;
+        }
+    }
+
+    .order-detail-name {
+        display: flex;
+        align-items: center;
+        gap: 145px;
+
+        p {
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+    }
+
+    .order-detail-add {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        p {
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+    }
+
+}
+
+.payment-method {
+    background-color: $whiteColor;
+    padding: 32px;
+    margin: 30px 0;
+
+    h2 {
+        font-size: $h2;
+        margin-bottom: 40px;
+        font-weight: 600;
+    }
+
+    .payment-method-selection {
+        display: flex;
+        flex-direction: column;
+
+        .radio-group {
+            display: flex;
+            width: 100%;
+            gap: 60px;
+            flex-direction: column;
+
+            .payment-radio-btns {
+                display: flex;
+
+                .single-radio {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            .payment-credit-card-imgs {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+
+}
+
+.payment-btn-div {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.conformation-left {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+    background-color: $whiteColor;
+
+    .conformation-img {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 367px;
+        }
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: $h3;
+    }
+
+    .con-btn-checkout {
+        background-color: $darkOrange;
+        height: 66px;
+        width: auto;
+        color: $whiteColor;
+        font-weight: 400;
+        border-radius: 0;
+        font-size: 1.25rem;
+    }
+}
+
+.conformation-right {
+    padding: 32px;
+    display: flex;
+    height: 545px;
+    flex-direction: column;
+    background-color: $whiteColor;
+
+    .days {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    .conformation-content {
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        margin-top: 32px;
+
+        p {
+            line-height: 32px;
+        }
+
+        p:nth-child(2),
+        p:nth-child(4) {
+            color: $greyColor
+        }
+    }
+
+    .conformation-shipping {
+        display: flex;
+        gap: 60px;
+        margin-top: 15px;
+
+        h2 {
+            font-weight: 500;
+            font-size: $h3;
+        }
+    }
+
+    .total {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+
+        // margin-top: 15px;
+        h2:nth-child(1) {
+            font-weight: 500;
+            font-size: $h3;
+        }
+
+        h2:nth-child(2) {
+            font-weight: 500;
+            font-size: $h2;
+        }
+    }
+
+    .seprator {
+        height: 1px;
+        background-color: $greyColor;
+        margin: 15px 0;
+    }
+
+    .shipping-detail-add {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        p {
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+    }
+}
+
+// Payment Method End

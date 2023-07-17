@@ -1,0 +1,784 @@
+$blackColorLight: #333333;
+$darkOrange: #D84727;
+$lightOrange: #F1DDC9;
+$h1: 2.75rem;
+$h2: 2.25rem;
+$h3: 1.5rem;
+$h4: 1.75rem;
+
+@media (min-width: 319px) and (max-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
+.mobile-header-login{
+width: 50%;
+}
+    .navbar-menu,
+    .header-login {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .navbar-bts {
+        gap: 15px;
+    }
+
+    .mobile-header-login {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+        cursor: pointer;
+        transition: all;
+        background: $lightOrange;
+        padding: 10px 15px;
+        border-radius: 10px;
+
+        p {
+            font-size: 1.125rem;
+            color: #000;
+            width: 54px;
+        }
+    }
+
+    // NavBar End
+    .slider {
+        margin: 15px 0;
+        height: 950px;
+
+        .slider-img {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .slider-content {
+        padding: 25px 0;
+        text-align: center;
+
+        h1 {
+            font-size: $h1;
+            line-height: 50px;
+        }
+
+        p {
+            width: auto;
+            padding: 0 30px;
+        }
+
+        .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .slider-btns {
+            padding: 10px;
+            justify-content: center;
+        }
+
+        .add-cart-btn {
+            height: 50px;
+        }
+
+        .logo-btn {
+            height: 50px;
+        }
+    }
+
+    .pre-btn {
+        right: 0;
+        left: 110px;
+        bottom: 0;
+    }
+
+    .next-btn {
+        right: 120px;
+        bottom: 0;
+    }
+
+    // Slider End
+
+    .seaction1 {
+        margin-top: 30px;
+
+        div:first-child {
+            padding-right: 0;
+            padding-bottom: 30px;
+        }
+    }
+
+    .eyewear-div {
+        display: grid;
+
+        .eyewear-img {
+            display: flex;
+            justify-self: center;
+
+            img {
+                float: none;
+            }
+        }
+    }
+
+    // Eyewear Seaction end
+    .seaction2 {
+        height: 100%;
+    }
+
+    .deal-main-div {
+        width: auto;
+
+        .deal-content-div {
+            text-align: center;
+        }
+    }
+
+    // Monthly Deals end
+    .news-left-side {
+        padding-left: 15px;
+    }
+
+    .seaction3 {
+        height: 850px;
+    }
+
+    .see-more-line {
+        display: none;
+    }
+
+    .news-class {
+        .news-right-side {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            margin-top: 110px;
+
+            img:nth-child(1) {
+                position: static;
+                margin: 20px auto;
+                width: 350px;
+            }
+
+            img:nth-child(2) {
+                top: 90px;
+                width: 100%;
+            }
+
+            img:nth-child(3) {
+                width: 100%;
+                bottom: -87px;
+                width: 60%;
+            }
+        }
+    }
+
+    // News Section End
+    .seaction5 {
+        height: 100%;
+        margin: 60px 0;
+    }
+
+    .test-slider {
+        height: 750px;
+    }
+
+    .testimonials-class {
+        width: 100%;
+
+        .testimonials-left-side {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img:nth-child(1) {
+                position: static;
+                height: 230px;
+            }
+
+            img:nth-child(2) {
+                top: -20px;
+                height: 330px;
+                z-index: -1;
+            }
+
+        }
+    }
+
+    .testimonials-right-side {
+        padding: 0 15px;
+
+        p {
+            margin-top: 30px;
+            width: auto;
+        }
+
+        .author-name {
+            margin-top: 10px;
+        }
+    }
+
+    // Testimonials End
+    .section6 {
+        margin-top: 70px;
+
+        .insta-imgs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    // Instagram seaction End
+    .section7 {
+        padding: 40px 0px;
+        width: 100%;
+        height: 100%;
+
+        .desktop-view-row {
+            display: none;
+        }
+
+        .mobile-view-row {
+            display: block;
+
+            .footer-img-div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+    }
+
+    .cart-left-side {
+        .cart-img {
+            height: auto;
+            width: auto;
+        }
+    }
+
+    .cart-right-side {
+        .priceing-div {
+            h2 {
+                font-size: 1rem;
+            }
+
+        }
+    }
+
+    .ant-steps-vertical {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+}
+
+@media (min-width: 991px) and (max-width: 1024px) {
+    .slider {
+        margin: 15px 0;
+        height: 950px;
+
+        .slider-img {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .slider-content {
+        padding: 25px 0;
+        text-align: center;
+
+        h1 {
+            font-size: $h1;
+            line-height: 50px;
+        }
+
+        p {
+            width: auto;
+            padding: 0 30px;
+        }
+
+        .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .slider-btns {
+            padding: 10px;
+            justify-content: center;
+        }
+
+        .add-cart-btn {
+            height: 50px;
+        }
+
+        .logo-btn {
+            height: 50px;
+        }
+    }
+
+    .pre-btn {
+        right: 0;
+        left: 40%;
+        bottom: 0;
+    }
+
+    .next-btn {
+        right: 40%;
+        bottom: 0;
+    }
+    // Slider End
+
+    .seaction1 {
+        margin-top: 30px;
+
+        div:first-child {
+            padding-right: 0;
+            padding-bottom: 30px;
+        }
+    }
+    .seaction2 {
+        height: 100%;
+    }
+
+    .deal-main-div {
+        width: auto;
+
+        .deal-content-div {
+            text-align: center;
+        }
+    }
+
+    // Monthly Deals end
+    .news-left-side {
+        padding-left: 15px;
+    }
+
+    .seaction3 {
+        height: 850px;
+    }
+
+    .see-more-line {
+        display: none;
+    }
+
+    .news-class {
+        .news-right-side {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            margin-top: 110px;
+
+            img:nth-child(1) {
+                position: static;
+                margin: 20px auto;
+                width: 350px;
+            }
+
+            img:nth-child(2) {
+                top: 90px;
+                width: 100%;
+            }
+
+            img:nth-child(3) {
+                width: 100%;
+                bottom: -87px;
+                width: 60%;
+            }
+        }
+    }
+
+    // News Section End
+    .seaction5 {
+        height: 100%;
+        margin: 60px 0;
+    }
+
+    .test-slider {
+        height: 750px;
+    }
+
+    .testimonials-class {
+        width: 100%;
+
+        .testimonials-left-side {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img:nth-child(1) {
+                position: static;
+                height: 230px;
+            }
+
+            img:nth-child(2) {
+                top: -20px;
+                height: 330px;
+                z-index: -1;
+            }
+
+        }
+    }
+
+    .testimonials-right-side {
+        padding: 0 15px;
+
+        p {
+            margin-top: 30px;
+            width: auto;
+        }
+
+        .author-name {
+            margin-top: 10px;
+        }
+    }
+
+    // Testimonials End
+    .section6 {
+        margin-top: 70px;
+
+        .insta-imgs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    // Instagram seaction End
+    .section7 {
+        padding: 40px 0px;
+        width: 100%;
+        height: 100%;
+
+        .desktop-view-row {
+            display: none;
+        }
+
+        .mobile-view-row {
+            display: block;
+
+            .footer-img-div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+    }
+
+    .cart-left-side {
+        .cart-img {
+            height: auto;
+            width: auto;
+        }
+    }
+
+    .cart-right-side {
+        .priceing-div {
+            h2 {
+                font-size: 1rem;
+            }
+
+        }
+    }
+
+    .ant-steps-vertical {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+}
+ @media only screen and (max-width: 320px) {
+    .container {
+        padding: 0 15px;
+    }
+    .mobile-header-login{
+        width: 50%;
+        }
+    .navbar-menu,
+    .header-login {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .navbar-bts {
+        gap: 15px;
+    }
+
+    .mobile-header-login {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+        cursor: pointer;
+        transition: all;
+        background: $lightOrange;
+        padding: 10px 15px;
+        border-radius: 10px;
+
+        p {
+            font-size: 1.125rem;
+            color: #000;
+            width: 54px;
+        }
+    }
+
+    // NavBar End
+    .slider {
+        margin: 15px 0;
+        height: 830px;
+
+        .slider-img {
+            display: flex;
+            justify-content: center;
+            img{
+                width: 50%;
+            }
+        }
+    }
+
+    .slider-content {
+        padding: 25px 0;
+        text-align: center;
+
+        h1 {
+            font-size: 1.75rem;
+            line-height: 50px;
+        }
+
+        p {
+            width: auto;
+            padding: 0 30px;
+        }
+
+        .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .slider-btns {
+            padding: 10px;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .add-cart-btn {
+            height: 50px;
+        }
+
+        .logo-btn {
+            height: 50px;
+        }
+    }
+
+    .pre-btn {
+        right: 0;
+        left: 75px;
+        bottom: 0;
+    }
+
+    .next-btn {
+        right: 80px;
+        bottom: 0;
+    }
+
+    // Slider End
+
+    .seaction1 {
+        .eyewear-div p{
+            width: auto;
+        }
+        margin-top: 30px;
+
+        div:first-child {
+            padding-right: 0;
+            padding-bottom: 30px;
+        }
+    }
+
+    .eyewear-div {
+        display: grid;
+
+        .eyewear-img {
+            display: flex;
+            justify-self: center;
+
+            img {
+                float: none;
+                width: 70%;
+            }
+        }
+    }
+
+    // Eyewear Seaction end
+    .seaction2 {
+        height: 100%;
+    }
+
+    .deal-main-div {
+        width: auto;
+
+        .deal-content-div {
+            text-align: center;
+        }
+    }
+
+    // Monthly Deals end
+    .news-left-side {
+        padding-left: 15px;
+    }
+
+    .seaction3 {
+        height: 850px;
+    }
+
+    .see-more-line {
+        display: none;
+    }
+    .news-left-side .news-content h2{
+        font-size: 1.25rem;
+    }
+    .news-left-side .news-content h3{
+        font-size: 1rem;
+    }
+    .news-class {
+        .news-right-side {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            margin-top: 110px;
+
+            img:nth-child(1) {
+                position: static;
+                margin: 20px auto;
+                width: 300px;
+            }
+
+            img:nth-child(2) {
+                top: 90px;
+                width: 100%;
+            }
+
+            img:nth-child(3) {
+                width: 100%;
+                bottom: -87px;
+                width: 60%;
+            }
+        }
+    }
+
+    // News Section End
+    .seaction5 {
+        height: 100%;
+        margin: 60px 0;
+    }
+
+    .test-slider {
+        height: 750px;
+    }
+
+    .testimonials-class {
+        width: 100%;
+
+        .testimonials-left-side {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img:nth-child(1) {
+                position: static;
+                height: 180px;
+            }
+
+            img:nth-child(2) {
+                top: -20px;
+                height: 330px;
+                z-index: -1;
+            }
+
+        }
+    }
+    .seaction4 .rows .col-div .product-contect h2{
+        font-size: 1.3rem;
+    }
+    .seaction4 .rows .col-div .product-contect h3{
+        font-size: 1rem;
+    }
+    .testimonials-right-side {
+        padding: 0 15px;
+
+        p {
+            margin-top: 30px;
+            width: auto;
+        }
+
+        .author-name {
+            margin-top: 10px;
+        }
+    }
+
+    // Testimonials End
+    .section6 {
+        margin-top: 70px;
+
+        .insta-imgs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    // Instagram seaction End
+    .section7 {
+        padding: 40px 0px;
+        width: 100%;
+        height: 100%;
+
+        .desktop-view-row {
+            display: none;
+        }
+
+        .mobile-view-row {
+            display: block;
+
+            .footer-img-div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+    }
+
+    .cart-left-side {
+        .cart-img {
+            height: auto;
+            width: auto;
+        }
+    }
+
+    .cart-right-side {
+        .priceing-div {
+            h2 {
+                font-size: 1rem;
+            }
+
+        }
+    }
+
+    .ant-steps-vertical {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+}

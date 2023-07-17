@@ -1,0 +1,49 @@
+$blackColorLight: #333333;
+$darkOrange: #D84727;
+$whiteColor: #ffff;
+$lightOrange: #F1DDC9;
+$greyColor: #777777;
+$primaryFont: 'Taviraj', serif;
+$secondary: 'Nunito', sans-serif;
+$h1: 3.75rem;
+$h2: 2.25rem;
+$h3: 1.5rem;
+$h4: 1.75rem;
+
+@media only screen and (max-width: 992px) {
+    .products-tab-col {
+        .tab-class {
+            gap: 0;
+            padding-left: 0;
+        }
+    }
+
+    .product-detail-main {
+        padding: 15px;
+
+        .product-title {
+            h2 {
+                font-size: 2.75rem;
+            }
+        }
+    }
+
+    .image-div {
+        img {
+            width: 100%;
+        }
+    }
+
+    .product-seaction3 {
+        .product-main-div {
+            height: auto;
+            width: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .relate-product-main {
+        justify-content: center;
+    }
+}
